@@ -39,7 +39,6 @@
     z-index: 999;
     width: 100%;
     position: relative;
-    padding-bottom: 2em;
   }
 
   .logo img {
@@ -148,6 +147,7 @@
     left: 145px;
     right: 145px;
     height: 60%;
+    padding-top: 1em;
   }
   
   .banner-content img {
