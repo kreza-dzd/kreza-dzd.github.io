@@ -1017,8 +1017,9 @@
   .wrapper {
     top: 390px;
     height: 23%;
+    left: 15px;
+    right: 15px;
   }
-  
   .wrapper h2 {
     font-size: 2rem;
     letter-spacing: 1px;
