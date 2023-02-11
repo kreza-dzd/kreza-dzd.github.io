@@ -1015,7 +1015,7 @@
   }
   
   .wrapper {
-    top: 425px;
+    top: 390px;
     height: 23%;
   }
   
@@ -1140,6 +1140,11 @@
   }
   
   @media (max-width: 393px)   {
+
+    .wrapper {
+      top: 420px;
+      height: 23%;
+    }
   
     .nachricht {
         right: 31%;
