@@ -70,8 +70,8 @@ vx4=1;
 vy4=1;
 r4=50;
 
-x5=50;
-y5=70;
+x5=40;
+y5=80;
 vx5=1;
 vy5=1;
 r5=50;
@@ -100,6 +100,12 @@ vx9=1;
 vy9=1;
 r9=50;
 
+x10=280;
+y10=300;
+vx10=1;
+vy10=1;
+r10=50;
+
 
 
 
@@ -120,6 +126,19 @@ if(y > canvas.height -r || y<r)
 x+=vx;
 y+=vy;
 
+
+if(x10 > canvas.width- r || x10<r) { vx10=-vx10; } 
+if(y10 > canvas.height -r || y10<r)  { vy10=-vy10; }
+x10+=vx10;
+y10+=vy10;
+
+ctx.beginPath();
+ctx.arc(x10,y10,r,0,2*Math.PI);
+ctx.fillStyle= "rgb(222, 8120, 224, 0.5)";
+ctx.lineWidth = 0.1;
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
 
 
 if(x6 > canvas.width- r || x6<r) { vx6=-vx6; }
@@ -143,7 +162,7 @@ y7+=vy7;
 
 ctx.beginPath();
 ctx.arc(x7,y7,r,0,2*Math.PI);
-ctx.fillStyle="red";
+ctx.fillStyle="rgb(208, 61, 51, 0.5)";
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
@@ -172,7 +191,7 @@ y9+=vy9;
 
 ctx.beginPath();
 ctx.arc(x9,y9,r,0,2*Math.PI);
-ctx.fillStyle="black";
+ctx.fillStyle="rgb(255, 253, 116, 0.5)";
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
@@ -208,7 +227,7 @@ y+=vy;
 
 ctxx.beginPath();
 ctxx.arc(x1,y1,r,0,2*Math.PI);
-ctxx.fillStyle= "blue";
+ctxx.fillStyle= "rgb(161, 243, 222)";
 ctxx.lineWidth = 0.1;
 ctxx.fill();
 ctxx.stroke();
@@ -223,7 +242,7 @@ y2+=vy2;
 
 ctxx.beginPath();
 ctxx.arc(x2,y2,r,0,2*Math.PI);
-ctxx.fillStyle= "rgb(155, 81, 224, 0.5)";
+ctxx.fillStyle="rgb(255, 252, 153)";
 ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
@@ -235,10 +254,10 @@ if(x3 < canvass.width- r || x3<r) { vx3=-vx3; }
 if(y3 < canvass.height -r || y3<r)  { vy3=-vy3; }
 x3+=vx3;
 y3+=vy3;
-
+ctxx.fillStyle= "rgb(255, 209, 220, 0.5)";
 ctxx.beginPath();
 ctxx.arc(x3,y3,r,0,2*Math.PI);
-ctxx.fillStyle="red";
+
 ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
@@ -249,10 +268,10 @@ if(x4 < canvass.width- r || x4<r) { vx4=-vx4; }
 if(y4 < canvass.height -r || y4<r)  { vy4=-vy4; }
 x4+=vx4;
 y4+=vy4;
-
+ctxx.fillStyle= "rgb(208, 61, 51)";
 ctxx.beginPath();
 ctxx.arc(x4,y4,r,0,2*Math.PI);
-ctxx.fillStyle="rgb(123, 220, 181, 0.5)";
+
 ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
@@ -264,7 +283,7 @@ y5+=vy5;
 
 ctxx.beginPath();
 ctxx.arc(x5,y5,r,0,2*Math.PI);
-ctxx.fillStyle="rgb(123, 220, 181, 0.5)";
+ctxx.fillStyle="rgb(255, 252, 153, 0.5)";
 ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
@@ -275,6 +294,7 @@ window.requestAnimationFrame(secondCap);
 
 
 secondCap();
+
 
 
 
