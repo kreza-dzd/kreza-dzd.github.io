@@ -1015,8 +1015,10 @@
   }
   
   .wrapper {
-    top: 425px;
+    top: 390px;
     height: 23%;
+    left: 15px;
+    right: 15px;
   }
   
   .wrapper h2 {
@@ -1027,6 +1029,10 @@
   }
   
   
+  .section1 h2 {
+    margin-top: 3.3em;
+  }
+
   .section1 h3 {
     margin-left: 2rem;
   }
@@ -1040,16 +1046,16 @@
   }
   
   .carousel__slider {
-    height: 60px;
+    height: 40px;
   }
   
   .carousel__list {
-    top: 50%;
+    top: 20%;
   }
   
   .projects {
     grid-template-rows: 245px 245px 245px 245px;
-    top: 1075px;
+    top: 1055px;
     grid-gap: 20px;
   }
   
@@ -1140,6 +1146,15 @@
   }
   
   @media (max-width: 393px)   {
+
+    .wrapper {
+      top: 420px;
+      height: 23%;
+    }
+
+    .projects {
+      top: 1040px;
+    }
   
     .nachricht {
         right: 31%;
