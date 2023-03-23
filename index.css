@@ -490,6 +490,10 @@
   transition: all 0.3s ease;
   line-height: 1;
   }
+
+  .footer-col ul li a {
+  color: inherit;
+  }
   
   .footer-col ul li a:hover {
   color: #ffffff;
