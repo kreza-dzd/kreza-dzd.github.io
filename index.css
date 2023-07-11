@@ -312,15 +312,15 @@
     color:#ef4123;
     font-family: 'Abril Fatface', cursive;
   }
+
+  #babes {
+    height: 1700px;
+  }
   
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
     grid-template-rows: 730px 730px 730px;
-=======
-    grid-template-rows: 530px 530px 530px;
->>>>>>> b8ca2f378d90a6935d5f66717b7d9e851cd5b43f
     grid-gap:12px;
     margin-top: 1rem;
     position: relative;
@@ -388,7 +388,7 @@
     position: relative;
     font-family: 'Epilogue', sans-serif; 
     background-color: #fffeee;
-    top: 3600px;
+    top: 4100px;
     left: 150px;
     right: 150px;
     bottom: 0;
@@ -494,10 +494,6 @@
   transition: all 0.3s ease;
   line-height: 1;
   }
-
-  .footer-col ul li a {
-  color: inherit;
-  }
   
   .footer-col ul li a:hover {
   color: #ffffff;
@@ -528,6 +524,11 @@
   .caption .third {
   display: inline;
   }
+
+  #babes {
+    height: 1200px;
+  }
+
   
   .wrapper {
     grid-template-rows: 850px;
@@ -685,6 +686,10 @@
         
         .section1 h4 {
         margin-top: 24rem;
+        }
+
+        #babes {
+          height: 700px;
         }
   
         .slider {
@@ -1036,7 +1041,10 @@
     margin-left: 2rem;
   }
   
-  
+  #babes {
+    height: 400px;
+  }
+
   .section1 h2 {
     margin-top: 3.3em;
   }
