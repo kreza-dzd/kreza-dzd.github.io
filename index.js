@@ -15,6 +15,11 @@ window.onload = function () {
   resizeCanvas ()
   animation = document.getElementById("animation");
   babes = document.getElementById("babes");
+  ctxx = babes.getContext('2d');
+
+  // Adjust the context based on device pixel ratio
+  let dpr = window.devicePixelRatio || 1;
+  ctxx.scale(dpr, dpr);
 }
 
 window.onresize = function () {
@@ -24,13 +29,27 @@ window.onresize = function () {
 }
 
 
+function resizeCanvas() {
+  let dpr = window.devicePixelRatio || 1;
 
-function resizeCanvas () {
-  animation.width = window.innerWidth;
-  animation.height = window.innerHeight;
-  babes.width = window.innerWidth;
-  babes.height = window.innerHeight;
+  // Update the size for 'animation' canvas
+  animation.width = window.innerWidth * dpr;
+  animation.height = window.innerHeight * dpr;
+  animation.style.width = window.innerWidth + 'px';
+  animation.style.height = window.innerHeight + 'px';
+
+  // Update the size for 'babes' canvas
+  babes.width = window.innerWidth * dpr;
+  babes.height = window.innerHeight * dpr;
+  babes.style.width = window.innerWidth + 'px';
+  babes.style.height = window.innerHeight + 'px';
+  
+  ctx = animation.getContext('2d');
+  ctxx = babes.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctxx.scale(dpr, dpr);
 }
+
 
 
 function prepareDocument () {
