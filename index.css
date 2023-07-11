@@ -316,7 +316,7 @@
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 750px 750px;
+    grid-template-rows: 730px 730px 730px;
     grid-gap:12px;
     margin-top: 1rem;
     position: relative;
