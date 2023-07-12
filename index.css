@@ -47,6 +47,10 @@ header {
   left: 12%;
 }
 
+.logo {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -1015,6 +1019,10 @@ font-weight: 200;
 }
 
 @media (max-width: 420px)  {
+
+  .logo {
+    font-size: 24px;
+  }
 
   .banner-content img {
     height: 180px;
