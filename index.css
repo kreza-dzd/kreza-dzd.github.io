@@ -1062,15 +1062,18 @@ font-weight: 200;
 
 .slider {
   top: 1010px;
+  width: 95%;
 }
 
 .carousel__slider {
   height: 40px;
+ 
 }
 
 .carousel__list {
   top: 20%;
 }
+
 
 .projects {
   grid-template-rows: 245px 245px 245px 245px;
