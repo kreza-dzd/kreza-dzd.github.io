@@ -324,7 +324,7 @@ canvas {
 }
 
 #babes {
-  height: 1700px;
+  height: 1900px;
 }
 
 .projects {
@@ -536,7 +536,7 @@ display: inline;
 }
 
 #babes {
-  height: 1200px;
+  height: 1400px;
 }
 
 
@@ -608,6 +608,10 @@ letter-spacing: 1px;
 
 .section1 h4 {
 margin-top: 30rem;
+}
+
+#babes {
+  height: 1100px;
 }
 
 .carousel__item {
@@ -699,8 +703,9 @@ font-weight: 600;
       }
 
       #babes {
-        height: 700px;
+        height: 800px;
       }
+      
 
       .slider {
         top: 1260px;
@@ -843,6 +848,10 @@ width: 70%;
 .wrapper {
   top: 570px;
   height: 30%;
+}
+
+#babes {
+  height: 600px;
 }
 
 .slider {
