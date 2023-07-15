@@ -343,7 +343,7 @@ canvas {
   position: absolute;
 }
 
-.projects a {
+.projects h3  {
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: 3px;
@@ -352,6 +352,12 @@ canvas {
   margin-top: 1rem;
   margin-left: 4rem;
   position: absolute; 
+}
+
+.projects h3 a {
+  font-family: 'Abril Fatface', cursive;
+  color: inherit;
+  text-decoration: none;
 }
 
 .section3 img {
