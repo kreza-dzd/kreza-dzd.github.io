@@ -354,46 +354,76 @@ canvas {
   position: absolute; 
 }
 
+.projects h3.project-title  {
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-family: 'Abril Fatface', cursive;
+  color:white;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  position: absolute;
+  z-index: 10; /* Add this line */
+}
+
 .projects h3 a {
   font-family: 'Abril Fatface', cursive;
   color: inherit;
   text-decoration: none;
 }
 
-.section3 img {
+.section3 img, .section4 img, .section5 img, .section6 img {
   height: 100%;
   width: 100%;
 }
-
-.section4 img {
-  height: 100%;
-  width: 100%;
-}
-
-.section5 img {
-  height: 100%;
-  width: 100%;
-}
-
-.section6 img {
-  height: 100%;
-  width: 100%;
-}
-
-
-
 
 .section3, .section4, .section5, .section6 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1; 
+}
 
-.section3 h2, .section4 h2, .section5 h2, .section6 h2 {
-  flex: 0 0 120px;
-  }
-  
+.section3:hover .overlay, .section4:hover .overlay, .section5:hover .overlay, .section6:hover .overlay {
+  opacity: 1;
+}
+
+.github-icon {
+  color: white;
+  background-color: white;
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+}
+
+.github-icon img {
+  width: 60px;
+  height: 60px; 
+}
+
+
+.section3:hover .github-icon, .section4:hover .github-icon, .section5:hover .github-icon, .section6:hover .github-icon {
+  visibility: visible;
+}
+
+
 
 .dno {
   display: grid;
