@@ -326,7 +326,7 @@ function carousel() {
   const totalWidth = Array.from(items).reduce((total, item) => total + item.offsetWidth, 0);
 
   let currentIndex = 0;
-  const speed = totalWidth / 2000; // Change the value to adjust the speed
+  const speed = totalWidth / 1000; // Change the value to adjust the speed
 
   function move() {
       currentIndex -= speed;
