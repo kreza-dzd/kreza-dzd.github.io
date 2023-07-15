@@ -15,6 +15,12 @@ window.onload = function () {
   resizeCanvas ()
   animation = document.getElementById("animation");
   babes = document.getElementById("babes");
+  ctxx = babes.getContext('2d');
+
+  // Adjust the context based on device pixel ratio
+  let dpr = window.devicePixelRatio || 1;
+  ctxx.scale(dpr, dpr);
+
 }
 
 window.onresize = function () {
@@ -24,13 +30,27 @@ window.onresize = function () {
 }
 
 
+function resizeCanvas() {
+  let dpr = window.devicePixelRatio || 1;
 
-function resizeCanvas () {
-  animation.width = window.innerWidth;
-  animation.height = window.innerHeight;
-  babes.width = window.innerWidth;
-  babes.height = window.innerHeight;
+  // Update the size for 'animation' canvas
+  animation.width = window.innerWidth * dpr;
+  animation.height = window.innerHeight * dpr;
+  animation.style.width = window.innerWidth + 'px';
+  animation.style.height = window.innerHeight + 'px';
+
+  // Update the size for 'babes' canvas
+  babes.width = window.innerWidth * dpr;
+  babes.height = window.innerHeight * dpr;
+  babes.style.width = window.innerWidth + 'px';
+  babes.style.height = window.innerHeight + 'px';
+  
+  ctx = animation.getContext('2d');
+  ctxx = babes.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctxx.scale(dpr, dpr);
 }
+
 
 
 function prepareDocument () {
@@ -299,50 +319,38 @@ secondCap();
 
 
 
-    function carousel() {
-        let carouselSlider = document.querySelector(".carousel__slider");
-        let list = document.querySelector(".carousel__list");
-        let item = document.querySelectorAll(".carousel__item");
-        let list2;
-      
-        const speed = 1;
-      
-        const width = list.offsetWidth;
-        let x = 0;
-        let x2 = width;
-      
-        function clone() {
-          list2 = list.cloneNode(true);
-          carouselSlider.appendChild(list2);
-          list2.style.left = `${width}px`;
-        }
-      
-        function moveFirst() {
-          x -= speed;
-      
-          if (width >= Math.abs(x)) {
-            list.style.left = `${x}px`;
-          } else {
-            x = width;
-          }
-        }
+function carousel() {
+  const carouselSlider = document.querySelector(".carousel__slider");
+  const list = document.querySelector(".carousel__list");
+  const items = document.querySelectorAll(".carousel__item");
+  const totalWidth = Array.from(items).reduce((total, item) => total + item.offsetWidth, 0);
 
-        function moveSecond() {
-            x2 -= speed;
-        
-            if (list2.offsetWidth >= Math.abs(x2)) {
-              list2.style.left = `${x2}px`;
-            } else {
-              x2 = width;
-            }
-          }
-      
+  let currentIndex = 0;
+  const speed = totalWidth / 3000; // Change the value to adjust the speed
 
-        clone();
-      
-        let a = setInterval(moveFirst, 5);
-        let b = setInterval(moveSecond, 5);
-      
+  function move() {
+      currentIndex -= speed;
+
+      if (currentIndex <= -items[0].offsetWidth) {
+          const firstItem = document.querySelector(".carousel__item");
+
+          // Move the first item to the end
+          list.appendChild(firstItem);
+
+          // Reset the current index
+          currentIndex = 0;
       }
-      
-      carousel();
+
+      carouselSlider.style.transform = `translateX(${currentIndex}px)`;
+  }
+
+  setInterval(move, 5);
+}
+
+carousel();
+
+
+
+
+
+
