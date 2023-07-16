@@ -411,6 +411,7 @@ canvas {
   transform: translate(-50%, -50%);
   text-align: center;
   visibility: hidden;
+  border-radius: 50%;
 }
 
 .github-icon img {
