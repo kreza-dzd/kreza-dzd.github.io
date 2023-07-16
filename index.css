@@ -1010,12 +1010,7 @@ font-weight: 200;
   margin-bottom: 15px;
   }
 
-  .github-icon-section3 {
-    height: auto; /* Maintain aspect ratio */
-    position: relative; /* Position it relative to the parent */
-    top: 0px; /* Adjust the position from the top */
-    left: 0px; /* Adjust the position from the left */
-}
+
 
 }
 
@@ -1050,6 +1045,10 @@ font-weight: 200;
 
 .caption .first {
   display: none;
+}
+
+.github-icon {
+  visibility: none;
 }
 
 }
