@@ -1419,12 +1419,12 @@ margin-left: -0.5rem;
       grid-gap: 0px;
     }
 
-    .dno {
-      top: 2140px;
-      } 
-
       .footer .row  {
         margin-left: 2.5rem;
+        }
+
+        .dno {
+          top: 1100px;
         }
 
 }
