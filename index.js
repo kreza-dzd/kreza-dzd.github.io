@@ -154,7 +154,6 @@ function drawCircles() {
   ctx.fillStyle= "rgb(222, 8120, 224, 0.5)";
   ctx.lineWidth = 0.1;
   ctx.fill();
-  ctx.stroke();
   ctx.closePath();
   
   
@@ -168,7 +167,6 @@ function drawCircles() {
   ctx.fillStyle= "rgb(155, 81, 224, 0.5)";
   ctx.lineWidth = 0.1;
   ctx.fill();
-  ctx.stroke();
   ctx.closePath();
   
   
@@ -181,7 +179,6 @@ function drawCircles() {
   ctx.arc(x7,y7,r,0,2*Math.PI);
   ctx.fillStyle="rgb(208, 61, 51, 0.5)";
   ctx.fill();
-  ctx.stroke();
   ctx.closePath();
   
   
@@ -197,7 +194,6 @@ function drawCircles() {
   ctx.arc(x8,y8,r8,0,2*Math.PI);
   ctx.fillStyle="rgb(0, 208, 132, 0.5)";
   ctx.fill();
-  ctx.stroke();
   ctx.closePath();
   
   
@@ -210,7 +206,6 @@ function drawCircles() {
   ctx.arc(x9,y9,r,0,2*Math.PI);
   ctx.fillStyle="rgb(255, 253, 116, 0.5)";
   ctx.fill();
-  ctx.stroke();
   ctx.closePath();
 
   if(x > canvass.width- r || x<r)
@@ -232,7 +227,6 @@ ctxx.arc(x1,y1,r,0,2*Math.PI);
 ctxx.fillStyle= "rgb(161, 243, 222)";
 ctxx.lineWidth = 0.1;
 ctxx.fill();
-ctxx.stroke();
 ctxx.closePath();
 
 
@@ -240,7 +234,6 @@ ctxx.beginPath();
 ctxx.arc(x2,y2,r,0,2*Math.PI);
 ctxx.fillStyle="rgb(255, 252, 153)";
 ctxx.fill();
-ctxx.stroke();
 ctxx.closePath();
 
 
@@ -248,18 +241,13 @@ ctxx.fillStyle= "rgb(255, 209, 220, 0.5)";
 ctxx.beginPath();
 ctxx.arc(x3,y3,r,0,2*Math.PI);
 ctxx.fill();
-ctxx.stroke();
 ctxx.closePath();
 
-
-//fourth circle
 
 ctxx.fillStyle= "rgb(208, 61, 51)";
 ctxx.beginPath();
 ctxx.arc(x4,y4,r,0,2*Math.PI);
-
 ctxx.fill();
-ctxx.stroke();
 ctxx.closePath();
 
 
@@ -267,7 +255,6 @@ ctxx.beginPath();
 ctxx.arc(x5,y5,r,0,2*Math.PI);
 ctxx.fillStyle="rgb(255, 252, 153, 0.5)";
 ctxx.fill();
-ctxx.stroke();
 ctxx.closePath();
 
   // Request the next animation frame
