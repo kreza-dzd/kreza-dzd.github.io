@@ -129,109 +129,91 @@ r10=50;
 
 
 
+function drawCircles() {
+  // Clear both canvases
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctxx.clearRect(0, 0, canvass.width, canvass.height);
 
+  if(x > canvas.width -r || x<r)
+  { vx=-vx;
+  }
+  if(y > canvas.height -r || y<r)
+  { vy=-vy;
+  }
+  x+=vx;
+  y+=vy;
+  
+  
+  if(x10 > canvas.width- r || x10<r) { vx10=-vx10; } 
+  if(y10 > canvas.height -r || y10<r)  { vy10=-vy10; }
+  x10+=vx10;
+  y10+=vy10;
+  
+  ctx.beginPath();
+  ctx.arc(x10,y10,r,0,2*Math.PI);
+  ctx.fillStyle= "rgb(222, 8120, 224, 0.5)";
+  ctx.lineWidth = 0.1;
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  
+  
+  if(x6 > canvas.width- r || x6<r) { vx6=-vx6; }
+  if(y6 > canvas.height -r || y6<r)  { vy6=-vy6; }
+  x6+=vx6;
+  y6+=vy6;
+  
+  ctx.beginPath();
+  ctx.arc(x6,y6,r,0,2*Math.PI);
+  ctx.fillStyle= "rgb(155, 81, 224, 0.5)";
+  ctx.lineWidth = 0.1;
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  
+  
+  if(x7 > canvas.width- r || x7<r) { vx7=-vx7; }
+  if(y7 > canvas.height -r || y7<r)  { vy7=-vy7; }
+  x7+=vx7;
+  y7+=vy7;
+  
+  ctx.beginPath();
+  ctx.arc(x7,y7,r,0,2*Math.PI);
+  ctx.fillStyle="rgb(208, 61, 51, 0.5)";
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  
+  
+  
+  
+  
+  if(x8 > canvas.width- r || x8<r) { vx8=-vx8; }
+  if(y8 > canvas.height -r || y8<r)  { vy8=-vy8; }
+  x8+=vx8;
+  y8+=vy8;
+  
+  ctx.beginPath();
+  ctx.arc(x8,y8,r8,0,2*Math.PI);
+  ctx.fillStyle="rgb(0, 208, 132, 0.5)";
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  
+  
+  if(x9 > canvas.width- r || x9<r) { vx9=-vx9; }
+  if(y9 > canvas.height -r || y9<r)  { vy9=-vy9; }
+  x9+=vx9;
+  y9+=vy9;
+  
+  ctx.beginPath();
+  ctx.arc(x9,y9,r,0,2*Math.PI);
+  ctx.fillStyle="rgb(255, 253, 116, 0.5)";
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
 
-function createCircle()
-{ 
-ctx.clearRect(0,0, canvas.width, canvas.height);
-
-
-//main
-if(x > canvas.width -r || x<r)
-{ vx=-vx;
-}
-if(y > canvas.height -r || y<r)
-{ vy=-vy;
-}
-x+=vx;
-y+=vy;
-
-
-if(x10 > canvas.width- r || x10<r) { vx10=-vx10; } 
-if(y10 > canvas.height -r || y10<r)  { vy10=-vy10; }
-x10+=vx10;
-y10+=vy10;
-
-ctx.beginPath();
-ctx.arc(x10,y10,r,0,2*Math.PI);
-ctx.fillStyle= "rgb(222, 8120, 224, 0.5)";
-ctx.lineWidth = 0.1;
-ctx.fill();
-ctx.stroke();
-ctx.closePath();
-
-
-if(x6 > canvas.width- r || x6<r) { vx6=-vx6; }
-if(y6 > canvas.height -r || y6<r)  { vy6=-vy6; }
-x6+=vx6;
-y6+=vy6;
-
-ctx.beginPath();
-ctx.arc(x6,y6,r,0,2*Math.PI);
-ctx.fillStyle= "rgb(155, 81, 224, 0.5)";
-ctx.lineWidth = 0.1;
-ctx.fill();
-ctx.stroke();
-ctx.closePath();
-
-
-if(x7 > canvas.width- r || x7<r) { vx7=-vx7; }
-if(y7 > canvas.height -r || y7<r)  { vy7=-vy7; }
-x7+=vx7;
-y7+=vy7;
-
-ctx.beginPath();
-ctx.arc(x7,y7,r,0,2*Math.PI);
-ctx.fillStyle="rgb(208, 61, 51, 0.5)";
-ctx.fill();
-ctx.stroke();
-ctx.closePath();
-
-
-
-
-
-if(x8 > canvas.width- r || x8<r) { vx8=-vx8; }
-if(y8 > canvas.height -r || y8<r)  { vy8=-vy8; }
-x8+=vx8;
-y8+=vy8;
-
-ctx.beginPath();
-ctx.arc(x8,y8,r8,0,2*Math.PI);
-ctx.fillStyle="rgb(0, 208, 132, 0.5)";
-ctx.fill();
-ctx.stroke();
-ctx.closePath();
-
-
-if(x9 > canvas.width- r || x9<r) { vx9=-vx9; }
-if(y9 > canvas.height -r || y9<r)  { vy9=-vy9; }
-x9+=vx9;
-y9+=vy9;
-
-ctx.beginPath();
-ctx.arc(x9,y9,r,0,2*Math.PI);
-ctx.fillStyle="rgb(255, 253, 116, 0.5)";
-ctx.fill();
-ctx.stroke();
-ctx.closePath();
-
-
-
-
-
-window.requestAnimationFrame(createCircle);
-}
-createCircle();
-
-
-
-function secondCap()
-{ 
-ctxx.clearRect(0,0, canvass.width, canvass.height);
-
-//main
-if(x > canvass.width- r || x<r)
+  if(x > canvass.width- r || x<r)
 { vx=-vx;
 }
 if(y > canvass.height -r || y<r)
@@ -254,12 +236,6 @@ ctxx.stroke();
 ctxx.closePath();
 
 
-//second circle
-if(x2 < canvass.width- r || x2<r) { vx2=-vx2; }
-if(y2 < canvass.height -r || y2<r)  { vy2=-vy2; }
-x2+=vx2;
-y2+=vy2;
-
 ctxx.beginPath();
 ctxx.arc(x2,y2,r,0,2*Math.PI);
 ctxx.fillStyle="rgb(255, 252, 153)";
@@ -268,26 +244,16 @@ ctxx.stroke();
 ctxx.closePath();
 
 
-
-//third circle
-if(x3 < canvass.width- r || x3<r) { vx3=-vx3; }
-if(y3 < canvass.height -r || y3<r)  { vy3=-vy3; }
-x3+=vx3;
-y3+=vy3;
 ctxx.fillStyle= "rgb(255, 209, 220, 0.5)";
 ctxx.beginPath();
 ctxx.arc(x3,y3,r,0,2*Math.PI);
-
 ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
 
 
 //fourth circle
-if(x4 < canvass.width- r || x4<r) { vx4=-vx4; }
-if(y4 < canvass.height -r || y4<r)  { vy4=-vy4; }
-x4+=vx4;
-y4+=vy4;
+
 ctxx.fillStyle= "rgb(208, 61, 51)";
 ctxx.beginPath();
 ctxx.arc(x4,y4,r,0,2*Math.PI);
@@ -296,10 +262,6 @@ ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
 
-if(x5 < canvass.width- r || x5<r) { vx5=-vx5; }
-if(y5 < canvass.height -r || y5<r)  { vy5=-vy5; }
-x5+=vx5;
-y5+=vy5;
 
 ctxx.beginPath();
 ctxx.arc(x5,y5,r,0,2*Math.PI);
@@ -308,12 +270,13 @@ ctxx.fill();
 ctxx.stroke();
 ctxx.closePath();
 
-window.requestAnimationFrame(secondCap);
+  // Request the next animation frame
+  window.requestAnimationFrame(drawCircles);
 }
 
+drawCircles();
 
 
-secondCap();
 
 
 
@@ -418,7 +381,6 @@ window.onclick = function(event) {
     modal4.style.display = "none";
   }
 }
-
 
 
 
