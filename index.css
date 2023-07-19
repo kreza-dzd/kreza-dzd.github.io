@@ -354,22 +354,24 @@ canvas {
   position: absolute; 
 }
 
+
 .projects h3.project-title  {
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: 3px;
   font-family: 'Abril Fatface', cursive;
   color:white;
-  margin-top: 1rem;
-  margin-left: 4rem;
   position: absolute;
   z-index: 10; /* Add this line */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projects h3 a {
   font-family: 'Abril Fatface', cursive;
   color: inherit;
   text-decoration: none;
+
 }
 
 .section3 img, .section4 img, .section5 img, .section6 img {
@@ -705,6 +707,10 @@ display: inline;
   right: 140px;
 }
 
+.projects h3.project-title  {
+  font-size: 2.5rem;
+}
+
 #myBtn, #myBtn2, #myBtn3, #myBtn4 {
   font-size: 20px;
 }
@@ -780,10 +786,8 @@ font-size: 1.8rem;
   right: 140px;
 }
 
-.projects a {
-  margin-top: 0rem;
-  margin-left: 0rem;
-  font-size: 2.4rem;
+.projects h3.project-title  {
+  font-size: 2rem;
 }
 
 #myBtn, #myBtn2, #myBtn3, #myBtn4 {
@@ -818,6 +822,10 @@ right: 50px;
 
 .banner-content img {
   height: 400px;
+}
+
+nav a {
+  font-size: 0.7rem;
 }
 
 .caption {
@@ -880,6 +888,10 @@ font-weight: 600;
         top: 1460px;
         left: 50px;
         right: 50px;
+      }
+
+      .projects h3.project-title  {
+        font-size: 1.5rem;
       }
 
 
