@@ -1306,7 +1306,7 @@ a.github-icon {
   }
 
   .banner-content {
-    top: 30px;
+    top: 40px;
     left: 15px;
     right: 15px;
   }
@@ -1314,11 +1314,10 @@ a.github-icon {
   .banner-content img {
     height: 47vh;
   }
-  
-  
-  
+
   canvas {
-    height: 51%;
+    height: 40%;
+    top: 68px;
   }
 
 .caption {
@@ -1489,18 +1488,49 @@ margin-left: -0.5rem;
     top: 1040px;
   }
 
+  
+  canvas {
+    top: 81px;
+  }
+
 
 }
 
 @media (max-width: 380px) {
+
+  .banner-content {
+    top: 50px;
+    left: 15px;
+    right: 15px;
+  }
+  
+  .banner-content img {
+    height: 57vh;
+  }
+
+  canvas {
+    height: 40%;
+    top: 77px;
+  }
+
   
   .wrapper {
-      top: 460px;
+      top: 425px;
     }
 
+    .slider {
+      top: 1010px;
+    }
+    
+  
+    
+    
     .projects {
+      top: 1055px;
       grid-gap: 0px;
     }
+    
+
 
       .footer .row  {
         margin-left: 2.5rem;
@@ -1516,7 +1546,14 @@ margin-left: -0.5rem;
 
 }
 
+@media (max-width: 360px) {
 
+  canvas {
+    height: 35%;
+    top: 82px;
+  }
+
+}
  
               @media screen and (min-width: 800px) {
               .nav-toggle-label {
