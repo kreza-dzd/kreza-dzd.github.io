@@ -150,26 +150,26 @@ nav a:hover {
   top: 100px;
   left: 145px;
   right: 145px;
-  height: 60%;
 }
 
 .banner-content img {
-    width: 100%;
-    height: 780px;
-    object-fit: cover;
+  width: 100%;
+  height: 1050px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+
+
+canvas {
+  width: 100%;
+  height: 74%;
+  position: absolute;
 }
 
 .owerlay {
     position: relative; 
 }
-
-
-canvas {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
 .caption {
     text-align: left;
     padding-left: 16em;
@@ -663,11 +663,38 @@ padding-left: 8px;
 
 
 @media (max-width: 1940px) {
+
+
+  .banner-content {
+    background-color:#ffe1d1;
+    position: absolute;
+    top: 90px;
+    left: 145px;
+    right: 145px;
+  }
   
   .banner-content img {
-      height: 560px;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    max-width: 100%;
   }
+  
+  
+  
+  canvas {
+    width: 100%;
+    height: 65%;
+    position: absolute;
 
+  }
+  
+  
+  .owerlay {
+      position: relative; 
+  }
+  
+  
 .caption {
   top: 655px;
   padding-left: 9em;
@@ -736,9 +763,15 @@ letter-spacing: 3px;
 }
 
 @media (max-width: 1500px) {
+
+  .banner-content {
+    top: 113px;
+  }
+  
   .banner-content img {
-    height: 470px;
-}
+    height: 65vh;
+  }
+  
 
 .caption {
 top: 572px;
@@ -815,14 +848,7 @@ font-size: 1.8rem;
 
 @media (max-width: 1300px) {
 
-.banner-content {
-left: 50px;
-right: 50px;
-}
 
-.banner-content img {
-  height: 400px;
-}
 
 nav a {
   font-size: 0.7rem;
@@ -851,6 +877,30 @@ font-weight: 600;
       html,body
       { 
           overflow-x: hidden; 
+      } 
+     
+      .banner-content {
+        background-color:#ffe1d1;
+        position: absolute;
+        top: 123px;
+        left: 70px;
+        right: 70px;
+      }
+      
+      .banner-content img {
+        width: 100%;
+        height: 38vh;
+        object-fit: cover;
+        max-width: 100%;
+      }
+      
+      
+      
+      canvas {
+        width: 100%;
+        height: 90%;
+        position: absolute;
+    
       }
 
       .wrapper {
@@ -996,9 +1046,22 @@ width: 70%;
       top: 15;
     }
 
-  .banner-content img {
-    height: 280px;
-  }
+    .banner-content {
+      top: 97px;
+      left: 60px;
+      right: 60px;
+    }
+    
+    .banner-content img {
+      height: 31vh;
+    }
+    
+    
+    
+    canvas {
+      height: 82%;
+    }
+
 
 .caption {
   top: 370px;
@@ -1146,11 +1209,6 @@ font-weight: 200;
 
 @media (max-width: 640px)  {
 
-.banner-content {
-  left: 0;
-  right: 0;
-}
-
 .caption {
   top: 376px;
   left: 20px;
@@ -1189,10 +1247,6 @@ a.github-icon {
 
 @media (max-width: 480px)   {
 
-.banner-content {
-  left: 0;
-  right: 0;
-}
 
 .caption {
   top: 386px;
@@ -1251,8 +1305,20 @@ a.github-icon {
     font-size: 24px;
   }
 
+  .banner-content {
+    top: 30px;
+    left: 15px;
+    right: 15px;
+  }
+  
   .banner-content img {
-    height: 180px;
+    height: 47vh;
+  }
+  
+  
+  
+  canvas {
+    height: 51%;
   }
 
 .caption {
