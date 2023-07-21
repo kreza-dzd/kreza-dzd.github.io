@@ -1312,19 +1312,19 @@ a.github-icon {
   }
 
   .banner-content {
-    top: 00px;
+    top: -20px;
     left: 15px;
     right: 15px;
   }
   
   .banner-content img {
-    height: 520px;
+    height: 600px;
   }
 
   canvas {
-    height: 36%;
+    height: 30%;
     top: 45px;
-    top: 95px;
+    top: 118px;
   }
 
 .caption {
