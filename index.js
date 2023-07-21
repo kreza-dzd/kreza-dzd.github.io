@@ -73,7 +73,7 @@ vy1=1;
 r1=50
 
 x2=800;
-y2=100;
+y2=150;
 vx2=1;
 vy2=1;
 r2=50
@@ -91,7 +91,7 @@ vy4=1;
 r4=50;
 
 x5=40;
-y5=80;
+y5=150;
 vx5=1;
 vy5=1;
 r5=50;
@@ -151,7 +151,7 @@ function drawCircles() {
   
   ctx.beginPath();
   ctx.arc(x10,y10,r,0,2*Math.PI);
-  ctx.fillStyle= "rgb(222, 8120, 224, 0.5)";
+  ctx.fillStyle= "rgb(142, 209, 252, 0.5)";
   ctx.lineWidth = 0.1;
   ctx.fill();
   ctx.closePath();
@@ -204,7 +204,7 @@ function drawCircles() {
   
   ctx.beginPath();
   ctx.arc(x9,y9,r,0,2*Math.PI);
-  ctx.fillStyle="rgb(255, 253, 116, 0.5)";
+  ctx.fillStyle="rgb(254, 248, 76, 0.5)";
   ctx.fill();
   ctx.closePath();
 
@@ -232,19 +232,18 @@ ctxx.closePath();
 
 ctxx.beginPath();
 ctxx.arc(x2,y2,r,0,2*Math.PI);
-ctxx.fillStyle="rgb(255, 252, 153)";
+ctxx.fillStyle="rgb(254, 248, 146)";
 ctxx.fill();
 ctxx.closePath();
 
-
-ctxx.fillStyle= "rgb(255, 209, 220, 0.5)";
+ctxx.fillStyle= "rgb(208, 61, 51)";
 ctxx.beginPath();
 ctxx.arc(x3,y3,r,0,2*Math.PI);
 ctxx.fill();
 ctxx.closePath();
 
 
-ctxx.fillStyle= "rgb(208, 61, 51)";
+ctxx.fillStyle= "rgb(247, 141, 168, 0.5)";
 ctxx.beginPath();
 ctxx.arc(x4,y4,r,0,2*Math.PI);
 ctxx.fill();
@@ -253,7 +252,7 @@ ctxx.closePath();
 
 ctxx.beginPath();
 ctxx.arc(x5,y5,r,0,2*Math.PI);
-ctxx.fillStyle="rgb(255, 252, 153, 0.5)";
+ctxx.fillStyle="rgb(254, 248, 76, 0.5)";
 ctxx.fill();
 ctxx.closePath();
 
