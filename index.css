@@ -766,11 +766,28 @@ letter-spacing: 3px;
 @media (max-width: 1500px) {
 
   .banner-content {
-    top: 113px;
+    background-color:#ffe1d1;
+    position: absolute;
+    top: 90px;
+    left: 145px;
+    right: 145px;
   }
   
   .banner-content img {
-    height: 65vh;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  
+  
+  
+  canvas {
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 0px;
+
   }
   
 
