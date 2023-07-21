@@ -684,9 +684,9 @@ padding-left: 8px;
   
   canvas {
     width: 100%;
-    height: 83%;
+    height: 87%;
     position: absolute;
-    top: -100px;
+    top: -120px;
 
   }
   
@@ -766,27 +766,15 @@ letter-spacing: 3px;
 @media (max-width: 1500px) {
 
   .banner-content {
-    background-color:#ffe1d1;
-    position: absolute;
     top: 90px;
     left: 145px;
     right: 145px;
   }
-  
-  .banner-content img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    max-width: 100%;
-  }
-  
-  
+   
   
   canvas {
-    width: 100%;
-    height: 65%;
-    position: absolute;
-    top: 0px;
+    height: 57%;
+    top: 60px;
 
   }
   
@@ -907,9 +895,9 @@ font-weight: 600;
       
       .banner-content img {
         width: 100%;
-        height: 38vh;
         object-fit: cover;
         max-width: 100%;
+        height: 400px;
       }
       
       
@@ -918,7 +906,7 @@ font-weight: 600;
         width: 100%;
         height: 90%;
         position: absolute;
-    
+        top: 10px;
       }
 
       .wrapper {
@@ -1071,7 +1059,7 @@ width: 70%;
     }
     
     .banner-content img {
-      height: 31vh;
+      height: 320px;
     }
     
     
@@ -1330,12 +1318,12 @@ a.github-icon {
   }
   
   .banner-content img {
-    height: 47vh;
+    height: 330px;
   }
 
   canvas {
     height: 40%;
-    top: 68px;
+    top: 110px;
   }
 
 .caption {
