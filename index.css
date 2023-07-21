@@ -1318,13 +1318,12 @@ a.github-icon {
   }
   
   .banner-content img {
-    height: 600px;
+    height: 630px;
   }
 
   canvas {
-    height: 30%;
-    top: 45px;
-    top: 118px;
+    height: 25%;
+    top: 138px;
   }
 
 .caption {
