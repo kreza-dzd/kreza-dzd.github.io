@@ -554,7 +554,7 @@ padding-bottom: 2.5em;
 }
 
 input {
-background: whitesmoke;
+background-color: #fffeee;
 border: none;
 font-size: 16px;
 height: auto;
@@ -562,7 +562,7 @@ margin: 0;
 outline: 0;
 padding: 20px;
 margin-bottom: 3rem;
-width: 40%;
+width: 60%;
 }
 
 .btn {
@@ -1409,6 +1409,8 @@ font-size: 1rem;
 input {
   margin-top: 1rem;
   margin-bottom: 3rem;
+  width: 100%;
+  padding: 15px;
   }
 
   .footer {
