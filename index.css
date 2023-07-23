@@ -1240,7 +1240,7 @@ input {
     width: 100%;
     }
 
-   .footer-col ul li, .number, .fot-links a  {
+.footer-col ul li  {
 font-size: 13px;
 font-weight: 200;
 }
@@ -1347,9 +1347,10 @@ a.github-icon {
 
 @media (max-width: 420px)  {
 
-  .number {
+  .small-font {
     font-size: 12px;
   }
+  
 
   .logo {
     font-size: 24px;
@@ -1520,6 +1521,9 @@ margin-bottom: 15px;
   display: inline-block;
   }
 
+  .number {
+    font-size: 13px;
+  }
 .show {
 margin-left: -0.5rem;
 }
@@ -1532,6 +1536,10 @@ margin-left: -0.5rem;
   white-space: nowrap;
 }
 
+
+.fot-links a{
+  font-size: 13px;
+}
 
 }
 
