@@ -1347,6 +1347,10 @@ a.github-icon {
 
 @media (max-width: 420px)  {
 
+  numer {
+    font-size: 12px;
+  }
+
   .logo {
     font-size: 24px;
   }
