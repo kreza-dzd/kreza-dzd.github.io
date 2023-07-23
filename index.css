@@ -1524,7 +1524,10 @@ margin-left: -0.5rem;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+}
 
+.touch li {
+  font-size: 13px;
 }
 
 .fot-links a{
