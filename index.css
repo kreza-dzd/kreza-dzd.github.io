@@ -1347,7 +1347,7 @@ a.github-icon {
 
 @media (max-width: 420px)  {
 
-  numer {
+  .number {
     font-size: 12px;
   }
 
