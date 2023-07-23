@@ -1240,7 +1240,7 @@ input {
     width: 100%;
     }
 
-.footer-col ul li  {
+   .footer-col ul li, .number, .fot-links a  {
 font-size: 13px;
 font-weight: 200;
 }
@@ -1520,9 +1520,6 @@ margin-bottom: 15px;
   display: inline-block;
   }
 
-  .number {
-    font-size: 13px;
-  }
 .show {
 margin-left: -0.5rem;
 }
@@ -1535,10 +1532,6 @@ margin-left: -0.5rem;
   white-space: nowrap;
 }
 
-
-.fot-links a{
-  font-size: 13px;
-}
 
 }
 
