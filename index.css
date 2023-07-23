@@ -1486,6 +1486,10 @@ margin-left: 3rem;
 margin-bottom: 15px;
 }
 
+.footer-col ul li {
+  font-size: 13px;
+}
+
 .desno  {
   position: absolute;
   left: -35%;
