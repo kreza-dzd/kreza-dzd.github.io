@@ -1536,8 +1536,9 @@ margin-left: -0.5rem;
 }
 
 .touch li {
-  font-size: 13px;
+  font-size: 13px !important;
 }
+
 
 .fot-links a{
   font-size: 13px;
