@@ -1535,8 +1535,8 @@ margin-left: -0.5rem;
   white-space: nowrap;
 }
 
-.touch > li {
-  font-size: 13px;
+#number {
+  font-size: 3px;
 }
 
 
