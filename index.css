@@ -1461,6 +1461,26 @@ input {
   padding: 15px;
   }
 
+
+.desno  {
+  position: absolute;
+  left: -35%;
+  }
+
+  .gore {
+      position: absolute;
+      margin-top: 0.3rem;
+  }
+
+  .dolje {
+      position: absolute;
+      margin-top: 6rem;
+  }
+
+  .inst {
+    padding-bottom: 5em;
+  }
+
   .footer {
     position: absolute;
    margin-top: 160px;
@@ -1486,28 +1506,6 @@ margin-left: 3rem;
 margin-bottom: 15px;
 }
 
-.footer-col ul li {
-  font-size: 13px;
-}
-
-.desno  {
-  position: absolute;
-  left: -35%;
-  }
-
-  .gore {
-      position: absolute;
-      margin-top: 0.3rem;
-  }
-
-  .dolje {
-      position: absolute;
-      margin-top: 6rem;
-  }
-
-  .inst {
-    padding-bottom: 5em;
-  }
 
   .footer-col ul {
       padding-bottom: -5em;
@@ -1518,6 +1516,9 @@ margin-bottom: 15px;
   display: inline-block;
   }
 
+  .number {
+    font-size: 13px;
+  }
 .show {
 margin-left: -0.5rem;
 }
