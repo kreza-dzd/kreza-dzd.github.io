@@ -1348,8 +1348,9 @@ a.github-icon {
 @media (max-width: 420px)  {
 
   .small-font {
-    font-size: 12px;
+    font-size: 7px !important;
   }
+  
   
 
   .logo {
