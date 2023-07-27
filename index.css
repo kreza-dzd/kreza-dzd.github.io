@@ -540,6 +540,7 @@ canvas {
   position: absolute;
 }
 
+
 .nachricht {
  
   justify-content: center;
@@ -552,7 +553,13 @@ canvas {
 
 .nachricht p {
 padding-bottom: 2.5em;
+font-size: 20px;
 }
+
+.nachricht h4 {
+  font-size: 24px;
+}
+
 
 input {
 background-color: #fffeee;
@@ -1004,6 +1011,14 @@ font-weight: 600;
     .section3 h2, .section4 h2, .section5 h2, .section6 h2 {
       font-size: 2.2rem;
     }
+
+    .nachricht p {
+      font-size: 18px;
+      }
+      
+      .nachricht h4 {
+        font-size: 23px;
+      }
   
   }
 
@@ -1226,6 +1241,15 @@ input {
   top: 100%;
   left: 50%;
   }
+
+  .nachricht p {
+    font-size: 12px;
+    }
+    
+    .nachricht h4 {
+      font-size: 18px;
+    }
+
 
   .footer {
     margin-top: 20px;
@@ -1487,11 +1511,19 @@ input {
     padding-bottom: 5em;
   }
 
+  .nachricht p {
+    font-size: 10px;
+    }
+    
+    .nachricht h4 {
+      font-size: 14px;
+    }
+
   .footer {
     position: absolute;
    margin-top: 160px;
    padding-bottom: 6em;
-     width: 10%;
+   width: 10%;
 
    }
 
@@ -1550,6 +1582,14 @@ margin-left: -0.5rem;
   .section1 {
     border-bottom: 16px solid #fffeee;
   }
+
+  .nachricht {
+    right: 35%;
+   }
+
+   .footer .row  {
+    margin-left: 2rem;
+    }
   
 
 }
@@ -1590,17 +1630,19 @@ margin-left: -0.5rem;
     top: 990px;
   }
   
-      .footer .row  {
-        margin-left: 2.5rem;
-        }
+  .nachricht {
+    right: 40%;
+   }
+
+   .footer .row  {
+    margin-left: 1.5rem;
+    }
 
         .dno {
           top: 1100px;
         }
 
-        .nachricht {  
-          right: 36%;
-         }
+      
 
 }
 
@@ -1625,6 +1667,14 @@ margin-left: -0.5rem;
     border-top: 10px solid #fffeee;
     top: 1020px;
   }
+
+  .nachricht {
+    right: 43%;
+   }
+
+   .footer .row  {
+    margin-left: 1.2rem;
+    }
 }
  
               @media screen and (min-width: 800px) {
