@@ -236,7 +236,7 @@ ctxx.fillStyle="rgb(254, 248, 146)";
 ctxx.fill();
 ctxx.closePath();
 
-ctxx.fillStyle= "rgb(208, 61, 51)";
+ctxx.fillStyle="rgb(254, 248, 76, 0.5)";
 ctxx.beginPath();
 ctxx.arc(x3,y3,r,0,2*Math.PI);
 ctxx.fill();
@@ -252,7 +252,7 @@ ctxx.closePath();
 
 ctxx.beginPath();
 ctxx.arc(x5,y5,r,0,2*Math.PI);
-ctxx.fillStyle="rgb(254, 248, 76, 0.5)";
+ctxx.fillStyle= "rgb(208, 61, 51)";
 ctxx.fill();
 ctxx.closePath();
 
